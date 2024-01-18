@@ -24,8 +24,8 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = ">=3.7,<4.0"
-acme = ">=2.7.4,<2.8.0"
-certbot = ">=2.7.4,<2.8.0"
+acme = ">=2.7.4"
+certbot = ">=2.7.4"
 cloudns-api = "0.9.3"
 dnspython = ">=2.3.0,<3.0.0"
 "zope.interface" = ">=5.4.0"
