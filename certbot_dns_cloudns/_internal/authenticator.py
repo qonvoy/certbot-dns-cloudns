@@ -2,7 +2,6 @@
 import functools
 import logging
 
-import zope.interface
 from certbot import errors
 from certbot import interfaces
 from certbot.plugins import dns_common
@@ -15,8 +14,6 @@ logger = logging.getLogger(__name__)
 DEFAULT_NETWORK_TIMEOUT = 45
 
 
-@zope.interface.implementer(interfaces.IAuthenticator)
-@zope.interface.provider(interfaces.IPluginFactory)
 class Authenticator(dns_common.DNSAuthenticator):
     """DNS Authenticator using CLouDNS API
     This Authenticator uses the ClouDNS API to fulfill a dns-01 challenge.
